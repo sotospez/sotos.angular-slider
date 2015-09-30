@@ -2,7 +2,7 @@
   "name": "sotos-angular-slider",
   "version": "0.0.2",
   "description": "angular slider",
-  "main": "angular-slider.min.js",
+  "main": "dist/sotos-angular-slider.min.js",
   "demo": "http://sotos.gr/demos/angular-slider/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
