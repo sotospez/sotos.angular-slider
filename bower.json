@@ -1,11 +1,11 @@
 {
   "name": "sotos.angular-slider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "authors": [
     "sotospez <sotospez@gmail.com>"
   ],
   "description": "angular slider up down left",
-  "main": "dist/sotos-angular-slider.min.js",
+  "main": "dist/sotos.angular-slider.min.js",
   "keywords": [
     "angular",
     "slider"

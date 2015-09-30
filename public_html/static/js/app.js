@@ -4,7 +4,7 @@
 
 
 
-var app = angular.module('app', ['ngAnimate','sotos-angular-slider','ngSanitize']);
+var app = angular.module('app', ['ngAnimate','sotos.angular-slider','ngSanitize']);
 
 app.controller('mainCtrl',[ '$scope','$sce',
     function ($scope,$sce) {

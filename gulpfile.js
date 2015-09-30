@@ -66,7 +66,7 @@ gulp.task('webserver', function() {
 gulp.task('sass',function() {
      gutil.log("Building css files...");
     return  gulp.src(paths.sass)
-        .pipe(concat(pkg.name))
+        .pipe(concat('angular-slider'))
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['> 0%', 'last 2 versions' ],
@@ -76,7 +76,7 @@ gulp.task('sass',function() {
         .pipe(minifyCss({
             keepSpecialComments: 0
         }))
-        .pipe(rename({ extname: '.min.css' }))
+        .pipe(rename('sotos.angular-slider.min.css' ))
         .pipe(header(banner, { pkg : pkg } ))
         .pipe(gulp.dest('./dist/css/'))
         .pipe(gulp.dest('./public_html/static/css/'));
