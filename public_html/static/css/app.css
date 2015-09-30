@@ -1,0 +1,81 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2{
+    font-size: 5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+h3,h4,h5{
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+  p{
+      font-size: 3em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      color: #fff;
+      margin:0;
+      padding:0;
+  }
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    height: 113px;
+    display: block;
+    background: rgba(0,0,0,0.2);
+    color: #f5f5f5;
+    font-size: 28px;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    line-height: 28px;
+    box-shadow: 0px 0px 2px #222222;
+
+}
+
+
+.img-res{
+    max-width: 100%;
+    height: auto;
+}
+
+.panel-1{
+    float: left;
+    width: 48%;
+    display: inline-block;
+    padding-left: 2%;
+    padding-top: 13px;
+    text-align: left;
+}
+
+.panel-2{
+    float: left;
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 2%;
+
+}

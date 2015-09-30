@@ -1,0 +1,14 @@
+<div  resize ng-style="style(offsetTop)">
+
+    <div class="slider-up-down-controls">
+        <div class="slider-controls-inner">
+            <div class="slider-controls-inner-btn">
+        <div class="btn-area" ng-repeat="i in countSlidesUPArray track by $index" >
+       <button ng-click="showTheSlideUpDown($index+1)" ng-class="{active:($index+1)==showSlidesUP}">
+                   {{$index+1}}
+       </button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>

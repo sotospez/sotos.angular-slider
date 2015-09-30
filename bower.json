@@ -1,21 +1,23 @@
 {
   "name": "sotos.angular-slider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "sotospez <sotospez@gmail.com>"
   ],
   "description": "angular slider up down left",
-  "main": "angular-slider.min.js",
+  "main": "dist/angular-slider.min.js",
   "keywords": [
     "angular",
     "slider"
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
+    "**/*.txt",
     "node_modules",
     "bower_components",
     "test",
+    "src",
+    "public_html",
     "tests"
   ]
 }

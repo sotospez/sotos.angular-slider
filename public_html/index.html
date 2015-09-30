@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Angular Slider Up Down - Left Right</title>
+    <meta name="author" content="sotospez" />
+    <meta name="description" content="angular full slider Up Down left right" />
+    <meta name="keywords"  content="angular,slider up down ,left right,sotospez" />
+    <meta name="viewport" content="user-scalable=no ,width=device-width ,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-sanitize.min.js"></script>
+    <script src="./static/js/sotos-angular-slider.min.js"></script>
+    <script src="./static/js/app.js"></script>
+    <link href="static/css/sotos-angular-slider.min.css" type="text/css" rel="stylesheet">
+    <link href="static/css/app.css" type="text/css" rel="stylesheet">
+</head>
+<body ng-controller="mainCtrl" >
+<header >
+    <div class="panel-1">
+        <div style="color: #ffffff">Angular Full Slider </div>
+        <div>Up Down</div>
+        <div>Left Right</div>
+    </div>
+    <div class="panel-2">
+        <a href="https://github.com/sotospez/sotos.angular-slider" title="github sotospez" target="_blank">
+            <img class="img-res" src="img/github-logo.png" width="287" height="95" alt="github" title="github">
+        </a>
+    </div>
+
+</header>
+     <div sotos-slider-up-down  offset-top="offsetTop" images="images" >
+     <div sotos-slider images="images.images1"   offset-top="offsetTop"></div>
+     <div sotos-slider images="images.images2"   offset-top="offsetTop"></div>
+     <div sotos-slider images="images.images3"   offset-top="offsetTop"></div>
+     <div sotos-slider images="images.images4"   offset-top="offsetTop"></div>
+     <div sotos-slider images="images.images5"   offset-top="offsetTop"></div>
+     <div sotos-slider images="images.images6"   offset-top="offsetTop"></div>
+
+     </div>
+
+</body>
+</html>
