@@ -1,6 +1,6 @@
 /**
  * sotos.angular-slider - angular slider
- * @version v0.0.2
+ * @version v0.0.3
  * @author : pezouvanis sotiris 
  * Copyright (c) 30/09/2015
  */
@@ -10,8 +10,6 @@ var sotosAngularSlider =  angular.module('sotos.angular-slider', ['ngAnimate','s
 
 
 
-angular.module("sotos.tmp", []).run(["$templateCache", function($templateCache) {$templateCache.put("js/slider-up-down.html","<div resize ng-style=\"style(offsetTop)\"><div class=\"slider-up-down-controls\"><div class=\"slider-controls-inner\"><div class=\"slider-controls-inner-btn\"><div class=\"btn-area\" ng-repeat=\"i in countSlidesUPArray track by $index\"><button ng-click=\"showTheSlideUpDown($index+1)\" ng-class=\"{active:($index+1)==showSlidesUP}\">{{$index+1}}</button></div></div></div></div></div>");
-$templateCache.put("js/slider.html","<div class=\"slider-main\" resize ng-style=\"style(offsetTop)\"><div class=\"slider-image\" ng-repeat=\"img in images\" ng-if=\"$index == show\" ng-class=\"{\'slider-right\':!nextimg,\'slider-left\':nextimg}\"><div class=\"slider-image-inner\" ng-style=\"{\'background-image\':\'url(\'+img.url+\')\'}\" ng-class=\"{\'show\':$index==show}\"><div class=\"text-area\" ng-if=\"img.title || img.description\"><div class=\"title\" ng-if=\"img.title\" ng-bind-html=\"img.title\"></div><div class=\"description\" ng-if=\"img.description\" ng-bind-html=\"img.description\"></div></div></div></div><div class=\"ng-hide\"><img ng-repeat=\"img in images\" ng-src=\"{{ img.url }}\" class=\"ng-hide\"></div><div class=\"slider-controls\"><button class=\"btn-prev\" ng-show=\"count>0\" ng-click=\"prev()\">prev</button> <button class=\"btn-next\" ng-show=\"count>0\" ng-click=\"next()\">next</button></div></div>");}]);
 /**
  * Created by sotiris on 22/4/2015.
  */
@@ -352,3 +350,6 @@ sotosAngularSlider.directive('sotosSlider',['$window','$interval','$timeout',
         }
     };
 }]);
+
+angular.module("sotos.tmp", []).run(["$templateCache", function($templateCache) {$templateCache.put("js/slider-up-down.html","<div resize ng-style=\"style(offsetTop)\"><div class=\"slider-up-down-controls\"><div class=\"slider-controls-inner\"><div class=\"slider-controls-inner-btn\"><div class=\"btn-area\" ng-repeat=\"i in countSlidesUPArray track by $index\"><button ng-click=\"showTheSlideUpDown($index+1)\" ng-class=\"{active:($index+1)==showSlidesUP}\">{{$index+1}}</button></div></div></div></div></div>");
+$templateCache.put("js/slider.html","<div class=\"slider-main\" resize ng-style=\"style(offsetTop)\"><div class=\"slider-image\" ng-repeat=\"img in images\" ng-if=\"$index == show\" ng-class=\"{\'slider-right\':!nextimg,\'slider-left\':nextimg}\"><div class=\"slider-image-inner\" ng-style=\"{\'background-image\':\'url(\'+img.url+\')\'}\" ng-class=\"{\'show\':$index==show}\"><div class=\"text-area\" ng-if=\"img.title || img.description\"><div class=\"title\" ng-if=\"img.title\" ng-bind-html=\"img.title\"></div><div class=\"description\" ng-if=\"img.description\" ng-bind-html=\"img.description\"></div></div></div></div><div class=\"ng-hide\"><img ng-repeat=\"img in images\" ng-src=\"{{ img.url }}\" class=\"ng-hide\"></div><div class=\"slider-controls\"><button class=\"btn-prev\" ng-show=\"count>0\" ng-click=\"prev()\">prev</button> <button class=\"btn-next\" ng-show=\"count>0\" ng-click=\"next()\">next</button></div></div>");}]);
